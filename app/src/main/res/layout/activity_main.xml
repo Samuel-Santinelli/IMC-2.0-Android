@@ -21,10 +21,11 @@
         android:text="IMC"
         android:layout_gravity="center"
         android:textSize="30sp"
-        android:padding="30dp"
+
         />
 
     <EditText
+        android:id="@+id/et_peso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Qual o eu peso?"
@@ -36,10 +37,12 @@
         android:inputType="number"
         android:background="@drawable/button_shape"
         android:padding="20dp"
+
         />
 
 
     <EditText
+        android:id="@+id/et_altura"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Qual a sua altura?"
@@ -53,6 +56,7 @@
         />
 
     <Button
+        android:id="@+id/button_calcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calcular"
@@ -63,12 +67,13 @@
         />
 
     <TextView
+        android:id="@+id/tv_resultado"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:hint="21"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="10dp"
         android:textSize="64sp"
         android:background="@drawable/circle_shape"
         android:textColor="@color/white"
@@ -76,6 +81,7 @@
 
 
     <TextView
+        android:id="@+id/tv_status_imc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Peso ideal"
